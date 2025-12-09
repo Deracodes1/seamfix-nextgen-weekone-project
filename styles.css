@@ -41,6 +41,14 @@ h1 {
   position: fixed;
   width: 400px;
 }
+.close-btn {
+  top: 10%;
+  right: 10%;
+  border-radius: 5px;
+  padding: 2px 4px;
+  cursor: pointer;
+  position: absolute;
+}
 .overlay {
   position: fixed;
   z-index: 2;

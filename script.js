@@ -4,6 +4,7 @@ const allProducts = document.querySelectorAll(".grid-item");
 const productAlert = document.querySelector(".product-alert");
 const alertMsg = document.querySelector(".alert-message");
 const overlay = document.querySelector(".overlay");
+const closeBtn = document.querySelector(".close-btn");
 allProducts.forEach((product) => {
   const productNameEl = product.querySelector(".product-name");
   product.addEventListener("click", function () {
@@ -17,6 +18,11 @@ allProducts.forEach((product) => {
 });
 
 overlay.addEventListener("click", function () {
+  productAlert.style.visibility = "hidden";
+  overlay.style.display = "none";
+});
+
+closeBtn.addEventListener("click", function () {
   productAlert.style.visibility = "hidden";
   overlay.style.display = "none";
 });
