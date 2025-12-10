@@ -26,3 +26,19 @@ closeBtn.addEventListener("click", function () {
   productAlert.style.visibility = "hidden";
   overlay.style.display = "none";
 });
+
+// responsive nav bar
+const bar = document.querySelector(".mobile");
+const icon = document.querySelector(".bar");
+const nav = document.querySelector(".nav-pages");
+
+bar.addEventListener("click", function () {
+  // opens side bar phone screen size
+  if (icon.classList.contains("fa-bars")) {
+    icon.classList.replace("fa-bars", "fa-xmark");
+    nav.classList.add("active");
+  } else {
+    icon.classList.replace("fa-xmark", "fa-bars");
+    nav.classList.remove("active");
+  }
+});
